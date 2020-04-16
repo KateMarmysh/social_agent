@@ -1,0 +1,111 @@
+<?xml version="1.0" ?>
+<!--Created by Python XES https://pypi.python.org/pypi/xes-->
+<!--(c) Jonathan Sumrall - http://www.sumrall.nl-->
+<log xes.creator="Python XES v1.2" xes.version="1.0" xmlns="http://www.xes-standard.org">
+  <extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext"/>
+  <extension name="Lifecycle" prefix="lifecycle" uri="http://www.xes-standard.org/lifecycle.xesext"/>
+  <extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext"/>
+  <extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext"/>
+  <global scope="trace"/>
+  <global scope="event">
+    <string key="concept:name" value="string"/>
+    <string key="org:resource" value="string"/>
+    <data key="time:timestamp" value="string"/>
+  </global>
+  <classifier keys="org:resource" name="org:resource"/>
+  <classifier keys="concept:name" name="concept:name"/>
+  <string key="creator" value="Python XES v1.2"/>
+  <trace>
+    <event>
+      <string key="concept:name" value="Register"/>
+      <string key="org:resource" value="Bob"/>
+      <data key="time:timestamp" value="2020-04-11T15:55:03.731707"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Negotiate"/>
+      <string key="org:resource" value="Sally"/>
+      <data key="time:timestamp" value="2020-04-11T15:55:03.731837"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Negotiate"/>
+      <string key="org:resource" value="Sally"/>
+      <data key="time:timestamp" value="2020-04-11T15:55:03.731917"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Sign"/>
+      <string key="org:resource" value="Dan"/>
+      <data key="time:timestamp" value="2020-04-11T15:55:03.732004"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Sendoff"/>
+      <string key="org:resource" value="Mary"/>
+      <data key="time:timestamp" value="2020-04-11T15:55:03.732146"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="Register"/>
+      <string key="org:resource" value="Bob"/>
+      <data key="time:timestamp" value="2020-04-11T15:55:03.732287"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Negotiate"/>
+      <string key="org:resource" value="Sally"/>
+      <data key="time:timestamp" value="2020-04-11T15:55:03.732466"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Sign"/>
+      <string key="org:resource" value="Dan"/>
+      <data key="time:timestamp" value="2020-04-11T15:55:03.732579"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Sendoff"/>
+      <string key="org:resource" value="Mary"/>
+      <data key="time:timestamp" value="2020-04-11T15:55:03.732619"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="Register"/>
+      <string key="org:resource" value="Bob"/>
+      <data key="time:timestamp" value="2020-04-11T15:55:03.732723"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Negotiate"/>
+      <string key="org:resource" value="Sally"/>
+      <data key="time:timestamp" value="2020-04-11T15:55:03.732800"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Sign"/>
+      <string key="org:resource" value="Dan"/>
+      <data key="time:timestamp" value="2020-04-11T15:55:03.732854"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Negotiate"/>
+      <string key="org:resource" value="Sally"/>
+      <data key="time:timestamp" value="2020-04-11T15:55:03.732928"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Sendoff"/>
+      <string key="org:resource" value="Mary"/>
+      <data key="time:timestamp" value="2020-04-11T15:55:03.733007"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="Register"/>
+      <string key="org:resource" value="Bob"/>
+      <data key="time:timestamp" value="2020-04-11T15:55:03.733112"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Sign"/>
+      <string key="org:resource" value="Dan"/>
+      <data key="time:timestamp" value="2020-04-11T15:55:03.733134"/>
+    </event>
+    <event>
+      <string key="concept:name" value="Sendoff"/>
+      <string key="org:resource" value="Mary"/>
+      <data key="time:timestamp" value="2020-04-11T15:55:03.733152"/>
+    </event>
+  </trace>
+</log>

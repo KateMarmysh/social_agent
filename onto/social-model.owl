@@ -371,6 +371,32 @@
   <hasBirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unknown</hasBirthDay>
 </Person>
 
+<Person rdf:about="#361950485">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasActivity rdf:resource="#Юмор"/>
+  <hasActivity rdf:resource="#Образование"/>
+  <hasActivity rdf:resource="#Автомобили"/>
+  <hasActivity rdf:resource="#Дискуссионный клуб"/>
+  <friendsWith rdf:resource="#44239068"/>
+  <friendsWith rdf:resource="#45388386"/>
+  <friendsWith rdf:resource="#80817183"/>
+  <friendsWith rdf:resource="#132549939"/>
+  <friendsWith rdf:resource="#135282929"/>
+  <friendsWith rdf:resource="#235995129"/>
+  <friendsWith rdf:resource="#53182060"/>
+  <subscribedTo rdf:resource="#186468555"/>
+  <subscribedTo rdf:resource="#167592941"/>
+  <subscribedTo rdf:resource="#49107734"/>
+  <subscribedTo rdf:resource="#59218056"/>
+  <subscribedTo rdf:resource="#82356467"/>
+  <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ilya</hasFirstName>
+  <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zimin</hasLastName>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasGender>
+  <hasPhoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://sun9-50.userapi.com/c857420/v857420522/114bed/UvP1HJPv0Ec.jpg?ava=1</hasPhoto>
+  <hasDomain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">id361950485</hasDomain>
+  <hasBirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unknown</hasBirthDay>
+</Person>
+
 <Community rdf:about="#31480508">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasActivity rdf:resource="#Юмор"/>
@@ -400,32 +426,6 @@
   <hasActivity rdf:resource="#Видеоигры"/>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nintendo ⚡ Скидки</hasName>
 </Community>
-
-<Person rdf:about="#361950485">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasActivity rdf:resource="#Юмор"/>
-  <hasActivity rdf:resource="#Образование"/>
-  <hasActivity rdf:resource="#Автомобили"/>
-  <hasActivity rdf:resource="#Дискуссионный клуб"/>
-  <friendsWith rdf:resource="#44239068"/>
-  <friendsWith rdf:resource="#45388386"/>
-  <friendsWith rdf:resource="#80817183"/>
-  <friendsWith rdf:resource="#132549939"/>
-  <friendsWith rdf:resource="#135282929"/>
-  <friendsWith rdf:resource="#235995129"/>
-  <friendsWith rdf:resource="#53182060"/>
-  <subscribedTo rdf:resource="#186468555"/>
-  <subscribedTo rdf:resource="#167592941"/>
-  <subscribedTo rdf:resource="#49107734"/>
-  <subscribedTo rdf:resource="#59218056"/>
-  <subscribedTo rdf:resource="#82356467"/>
-  <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ilya</hasFirstName>
-  <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zimin</hasLastName>
-  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasGender>
-  <hasPhoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://sun9-50.userapi.com/c857420/v857420522/114bed/UvP1HJPv0Ec.jpg?ava=1</hasPhoto>
-  <hasDomain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">id361950485</hasDomain>
-  <hasBirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unknown</hasBirthDay>
-</Person>
 
 <Community rdf:about="#57846937">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>

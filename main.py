@@ -1,12 +1,15 @@
+#!/usr/local/bin/python3
+
 from owlready2 import *
 import pika
 import vk_api
 import model
 import json
+import event_miner
 
 # https://oauth.vk.com/authorize?client_id=7230301&redirect_uri=https://localhost&response_type=code&scope=groups friends
 # https://oauth.vk.com/access_token?client_id=7230301&client_secret=EfoAqkm3YcsIaRlRd7cq&code=683467eade23dd4136&redirect_uri=https://localhost
-vk_session = vk_api.VkApi(token="d0bc8ad7183848802f0716cc9113284b6fa5fd2c642898dbf71234ab8947ea560aaa6b6da23ed785aca91")
+vk_session = vk_api.VkApi(token="b2159813ff701b26058f147c281de1bf871515be0428e80add2c2930290802050f7778cf7ae1c3644e6f8")
 vk = vk_session.get_api()
 
 target_users = [53182060, 44239068, 45388386, 361950485, 235995129, 132549939, 135282929, 80817183, 90271290, 166286700]
@@ -216,8 +219,7 @@ def create_onto_community(community):
     onto_community.hasActivity = [onto.Activity(community.activity)]
 
 
-connection = pika.BlockingConnection(
-    pika.ConnectionParameters(host='localhost'))
+connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
 channel = connection.channel()
 
 channel.exchange_declare(exchange='social_data')
@@ -276,8 +278,23 @@ def callback(ch, method, properties, body):
         channel.basic_publish(exchange='social_data_to_update', routing_key='', body=body)
 
 
-channel.basic_consume(
-    queue='social_data', on_message_callback=callback, auto_ack=True)
+channel.basic_consume(queue='social_data', on_message_callback=callback, auto_ack=True)
 
-print(' [*] Waiting for messages. To exit press CTRL+C')
-channel.start_consuming()
+consumer_thread = threading.Thread(target=channel.start_consuming)
+consumer_thread.start()
+print(' [*] Ontology consumer started\n')
+
+print(' [*] Processing users. To exit press CTRL+C')
+
+event_miner.user_processing = {user_id: False for user_id in target_users}
+while True:
+    for user in vk.users.get(user_ids=target_users, fields='online'):
+        if user['online'] and not event_miner.user_processing[user['id']]:
+            groups = vk.groups.get(user_id=user['id'], count=5)
+            event_miner.user_processing[user['id']] = True
+            event_miner.UserEventMiner(user, groups['items']).start()
+
+    time.sleep(event_miner.time_to_write_log)
+    print("Writing data to log")
+    event_miner.write_log()
+

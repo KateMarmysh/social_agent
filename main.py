@@ -12,33 +12,25 @@ import event_miner
 vk_session = vk_api.VkApi(token="b2159813ff701b26058f147c281de1bf871515be0428e80add2c2930290802050f7778cf7ae1c3644e6f8")
 vk = vk_session.get_api()
 
-target_users = [53182060, 44239068, 45388386, 361950485, 235995129, 132549939, 135282929, 80817183, 90271290, 166286700]
+target_users = []
 target_groups = []
 
 
-# [53182060,
-#  3610782, 5461147, 9290371, 22821210, 23850026, 25113326, 27068292, 30026418, 30531534,
-#  40107546,
-#  44239068, 45388386, 56836969, 57881402, 61576089, 63253179, 73833759, 77962517, 80685022, 80871936,
-#  82156740, 85541926, 90271290, 96857977, 102012593, 102156006, 108160686, 114051044, 118638452,
-#  126972396, 131511955, 132549939, 134549522, 135043272, 135282929, 136017282, 137934078, 142179622,
-#  144516404, 159367585, 166286700, 168460021, 170343076, 174946803, 176330810, 183727101, 217962134,
-#  222554002, 235995129, 255358827, 271559383, 282526843, 282875460, 325001630, 361950485, 365942641,
-#  378607189, 456498132, 522732873]
-
-
+# Load person's friends from social network
 def fill_friends(p):
     vk_friends_result = vk.friends.get(user_id=p.u_id)
 
     p.friends = vk_friends_result['items']
 
 
+# Load person's group from social network
 def fill_groups(p):
-    vk_groups_result = vk.groups.get(user_id=p.u_id, count=5, filter='publics', )
+    vk_groups_result = vk.groups.get(user_id=p.u_id)
 
     p.groups = vk_groups_result['items']
 
 
+# Get person from social network
 def get_person(user_id):
     vk_user_result = vk.users.get(user_id=user_id,
                                   fields='bdate, photo_100, age, city, country, home_town, sex, games, online, domain, has_mobile, contacts, site, education, universities, schools, status, last_seen, followers_count, common_count, occupation, nickname, relatives, relation, personal, connections, exports, activities, interests, music, movies, tv, books, games, about, quotes, can_post, can_see_all_posts, can_see_audio')
@@ -56,6 +48,7 @@ def get_person(user_id):
     return person
 
 
+# Get community from social network
 def get_community(group_id):
     vk_group_result = vk.groups.getById(group_id=group_id, fields='activity')
     if len(vk_group_result) == 0:
@@ -72,6 +65,7 @@ def load_ontology():
     return get_ontology("file://onto/social-model.owl")
 
 
+# Create or update ontology structure
 def create_ontology():
     onto.load()
     with onto:
@@ -186,6 +180,7 @@ def create_ontology():
     onto.save()
 
 
+# Create or update ontology person
 def create_onto_person(person):
     onto.load()
     onto_person = onto.Person(str(person.u_id))
@@ -196,29 +191,27 @@ def create_onto_person(person):
     onto_person.hasDomain = [person.domain]
     onto_person.hasPhoto = [person.photo]
     onto_person.hasActivity = []
-    activities_known = True
     for friend in person.friends:
         if friend in target_users:
             onto_friend = onto.Person(str(friend))
             onto_person.friendsWith.append(onto_friend)
     for group in person.groups:
-        onto_community = onto.Community(str(group))
-        onto_person.subscribedTo.append(onto_community)
-        if len(onto_community.hasActivity) > 0:
-            onto_person.hasActivity.append(onto_community.hasActivity[0])
-        else:
-            activities_known = False
+        if group in target_groups:
+            onto_community = onto.Community(str(group))
+            onto_person.subscribedTo.append(onto_community)
+            if len(onto_community.hasActivity) > 0:
+                onto_person.hasActivity.append(onto_community.hasActivity[0])
     onto.save()
 
-    return activities_known
 
-
+# Create or update ontology community
 def create_onto_community(community):
     onto_community = onto.Community(str(community.g_id))
     onto_community.hasName = [community.name]
     onto_community.hasActivity = [onto.Activity(community.activity)]
 
 
+# Rabbit connection declare
 connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
 channel = connection.channel()
 
@@ -228,7 +221,7 @@ channel.exchange_declare(exchange='social_data_to_update')
 channel.queue_declare(queue='social_data', durable=True)
 channel.queue_declare(queue='social_data_to_update', durable=True,
                       arguments={
-                          'x-message-ttl': 60 * 1000,
+                          'x-message-ttl': 3 * 60 * 60 * 1000,  # 3 hours
                           "x-dead-letter-exchange": "social_data"
                       })
 
@@ -244,37 +237,46 @@ onto = load_ontology()
 create_ontology()
 
 
+# Rabbit new message callback
 def callback(ch, method, properties, body):
     data = json.loads(body)
 
     if data['type'] == 'user':
         print("Processing user: %r" % data['user_id'])
 
+        # Get person info from vk
         person = get_person(data['user_id'])
+
+        # Check new user
         if person.u_id not in target_users:
-            for friend in person.friends:
-                if friend in target_users:
-                    channel.basic_publish(exchange='social_data', routing_key='',
-                                          body=json.dumps({'type': 'user', 'user_id': friend}))
-        for group in person.groups:
-            if group not in target_groups:
-                channel.basic_publish(exchange='social_data', routing_key='',
-                                      body=json.dumps({'type': 'group', 'group_id': group}))
-                target_groups.append(group)
+            target_users.append(person.u_id)
 
-        activities_known = create_onto_person(person)
+            # Start mining events
+            event_miner.UserEventMiner(person).start()
 
-        if activities_known:
-            channel.basic_publish(exchange='social_data_to_update', routing_key='', body=body)
-        else:
-            channel.basic_publish(exchange='social_data', routing_key='', body=body)
+        # Update info in ontology
+        create_onto_person(person)
+
+        # Publish message to update entity after delay
+        channel.basic_publish(exchange='social_data_to_update', routing_key='', body=body)
 
     if data['type'] == 'group':
         print("Processing group: %r" % data['group_id'])
 
+        # Get community from vk
         community = get_community(data['group_id'])
+
+        # Check new community
+        if community.g_id not in target_groups:
+            target_groups.append(community.g_id)
+
+            # Start mining events
+            event_miner.GroupEventMiner(community).start()
+
+        # Update info in ontology
         create_onto_community(community)
 
+        # Publish message to update entity after delay
         channel.basic_publish(exchange='social_data_to_update', routing_key='', body=body)
 
 
@@ -283,18 +285,4 @@ channel.basic_consume(queue='social_data', on_message_callback=callback, auto_ac
 consumer_thread = threading.Thread(target=channel.start_consuming)
 consumer_thread.start()
 print(' [*] Ontology consumer started\n')
-
-print(' [*] Processing users. To exit press CTRL+C')
-
-event_miner.user_processing = {user_id: False for user_id in target_users}
-while True:
-    for user in vk.users.get(user_ids=target_users, fields='online'):
-        if user['online'] and not event_miner.user_processing[user['id']]:
-            groups = vk.groups.get(user_id=user['id'], count=5)
-            event_miner.user_processing[user['id']] = True
-            event_miner.UserEventMiner(user, groups['items']).start()
-
-    time.sleep(event_miner.time_to_write_log)
-    print("Writing data to log")
-    event_miner.write_log()
-
+print(' [*] To exit press CTRL+C')

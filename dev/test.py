@@ -13,5 +13,5 @@ vk = vk_session.get_api()
 groups = [186468555, 3551694, 59218056, 60397113, 151288610,
           110581128, 40202469, 30210603, 46038605]
 
-result = vk.wall.get(owner_id="53182060", count=5)["items"]
+result = vk.wall.get(owner_id="53182060", count=1)["items"]
 print(result)

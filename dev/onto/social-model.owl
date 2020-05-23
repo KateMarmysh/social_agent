@@ -147,262 +147,12 @@
 
 <Post rdf:about="#-186468555_2155">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <viewedBy rdf:resource="#53182060"/>
   <postedBy rdf:resource="#186468555"/>
   <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
 </Post>
-
-<Post rdf:about="#-186468555_2152">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <viewedBy rdf:resource="#53182060"/>
-  <postedBy rdf:resource="#186468555"/>
-  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
-</Post>
-
-<Post rdf:about="#-186468555_2143">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <viewedBy rdf:resource="#53182060"/>
-  <postedBy rdf:resource="#186468555"/>
-  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
-</Post>
-
-<Community rdf:about="#3551694">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasActivity rdf:resource="#Городское сообщество"/>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">МОЙ ГОРОД — ПЕРМЬ!</hasName>
-</Community>
-
-<Activity rdf:about="#Городское сообщество">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</Activity>
-
-<Post rdf:about="#-3551694_3038049">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <viewedBy rdf:resource="#235995129"/>
-  <viewedBy rdf:resource="#45388386"/>
-  <viewedBy rdf:resource="#53182060"/>
-  <postedBy rdf:resource="#3551694"/>
-  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
-</Post>
-
-<Post rdf:about="#-3551694_3037932">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <viewedBy rdf:resource="#235995129"/>
-  <viewedBy rdf:resource="#45388386"/>
-  <viewedBy rdf:resource="#53182060"/>
-  <postedBy rdf:resource="#3551694"/>
-  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
-</Post>
-
-<Post rdf:about="#-3551694_3037806">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <viewedBy rdf:resource="#235995129"/>
-  <viewedBy rdf:resource="#45388386"/>
-  <viewedBy rdf:resource="#53182060"/>
-  <postedBy rdf:resource="#3551694"/>
-  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
-</Post>
-
-<Community rdf:about="#59218056">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasActivity rdf:resource="#Образование"/>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Подслушано ПГНИУ</hasName>
-</Community>
-
-<Activity rdf:about="#Образование">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</Activity>
-
-<Post rdf:about="#-59218056_192245">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <viewedBy rdf:resource="#235995129"/>
-  <viewedBy rdf:resource="#45388386"/>
-  <viewedBy rdf:resource="#54845968"/>
-  <viewedBy rdf:resource="#93900513"/>
-  <postedBy rdf:resource="#59218056"/>
-  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
-</Post>
-
-<Post rdf:about="#-59218056_192240">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <viewedBy rdf:resource="#235995129"/>
-  <viewedBy rdf:resource="#45388386"/>
-  <viewedBy rdf:resource="#54845968"/>
-  <viewedBy rdf:resource="#93900513"/>
-  <postedBy rdf:resource="#59218056"/>
-  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
-</Post>
-
-<Post rdf:about="#-59218056_192236">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <viewedBy rdf:resource="#235995129"/>
-  <viewedBy rdf:resource="#45388386"/>
-  <viewedBy rdf:resource="#54845968"/>
-  <viewedBy rdf:resource="#93900513"/>
-  <postedBy rdf:resource="#59218056"/>
-  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
-</Post>
-
-<Community rdf:about="#60397113">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasActivity rdf:resource="#Городское сообщество"/>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ПОДСЛУШАНО ПЕРМЬ</hasName>
-</Community>
-
-<Post rdf:about="#-60397113_8352453">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <viewedBy rdf:resource="#45388386"/>
-  <viewedBy rdf:resource="#85185902"/>
-  <postedBy rdf:resource="#60397113"/>
-  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
-</Post>
-
-<Post rdf:about="#-60397113_8352445">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <viewedBy rdf:resource="#45388386"/>
-  <viewedBy rdf:resource="#85185902"/>
-  <postedBy rdf:resource="#60397113"/>
-  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
-</Post>
-
-<Post rdf:about="#-60397113_8352311">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <postedBy rdf:resource="#60397113"/>
-  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
-</Post>
-
-<Community rdf:about="#151288610">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasActivity rdf:resource="#Городское сообщество"/>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Пермь 24/7</hasName>
-</Community>
-
-<Post rdf:about="#-151288610_327350">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <viewedBy rdf:resource="#45388386"/>
-  <viewedBy rdf:resource="#54845968"/>
-  <postedBy rdf:resource="#151288610"/>
-  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
-</Post>
-
-<Post rdf:about="#-151288610_327317">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <viewedBy rdf:resource="#45388386"/>
-  <viewedBy rdf:resource="#54845968"/>
-  <postedBy rdf:resource="#151288610"/>
-  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
-</Post>
-
-<Community rdf:about="#110581128">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasActivity rdf:resource="#Образование"/>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Цитаты преподавателей ПГНИУ</hasName>
-</Community>
-
-<Community rdf:about="#40202469">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasActivity rdf:resource="#Университет"/>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Пермский государственный университет (ПГНИУ)</hasName>
-</Community>
-
-<Activity rdf:about="#Университет">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</Activity>
-
-<Post rdf:about="#-40202469_23660">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <viewedBy rdf:resource="#45388386"/>
-  <postedBy rdf:resource="#40202469"/>
-  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
-</Post>
-
-<Post rdf:about="#-40202469_23656">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <postedBy rdf:resource="#40202469"/>
-  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
-</Post>
-
-<Community rdf:about="#30210603">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasActivity rdf:resource="#Интернет-СМИ"/>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ПЕРМЬ АКТИВНАЯ | Perm Active</hasName>
-</Community>
-
-<Activity rdf:about="#Интернет-СМИ">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</Activity>
-
-<Post rdf:about="#-30210603_2295664">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <viewedBy rdf:resource="#45388386"/>
-  <postedBy rdf:resource="#30210603"/>
-  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
-</Post>
-
-<Post rdf:about="#-30210603_2295639">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <viewedBy rdf:resource="#45388386"/>
-  <postedBy rdf:resource="#30210603"/>
-  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
-</Post>
-
-<Post rdf:about="#-30210603_2295623">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <viewedBy rdf:resource="#45388386"/>
-  <postedBy rdf:resource="#30210603"/>
-  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
-</Post>
-
-<Community rdf:about="#46038605">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasActivity rdf:resource="#Университетский спорт"/>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Спортивный клуб «Универ» ПГНИУ</hasName>
-</Community>
-
-<Activity rdf:about="#Университетский спорт">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</Activity>
-
-<Post rdf:about="#-46038605_4479">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <viewedBy rdf:resource="#45388386"/>
-  <viewedBy rdf:resource="#54845968"/>
-  <postedBy rdf:resource="#46038605"/>
-  <isRepostOf rdf:resource="#-18354526_457246038"/>
-  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
-</Post>
-
-<Post rdf:about="#-18354526_457246038">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</Post>
-
-<Post rdf:about="#-46038605_4478">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <viewedBy rdf:resource="#54845968"/>
-  <postedBy rdf:resource="#46038605"/>
-  <isRepostOf rdf:resource="#-42735432_74502"/>
-  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
-</Post>
-
-<Post rdf:about="#-42735432_74502">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</Post>
-
-<Community rdf:about="#7557592">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasActivity rdf:resource="#Открытая группа"/>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Профсоюзная организация студентов ПГУ (ПГНИУ)</hasName>
-</Community>
-
-<Activity rdf:about="#Открытая группа">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</Activity>
 
 <Person rdf:about="#53182060">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasActivity rdf:resource="#Городское сообщество"/>
-  <hasActivity rdf:resource="#Юмор"/>
-  <hasActivity rdf:resource="#Открытая группа"/>
   <friendsWith rdf:resource="#44239068"/>
   <friendsWith rdf:resource="#45388386"/>
   <friendsWith rdf:resource="#82156740"/>
@@ -417,7 +167,7 @@
   <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Саша</hasFirstName>
   <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Усанин</hasLastName>
   <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasGender>
-  <hasPhoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://sun9-69.userapi.com/tVJ4CfSprLHLlFHDdQkDaDH_PtJks7HJH1PW-A/CHvd5y4-QsA.jpg?ava=1</hasPhoto>
+  <hasPhoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://sun3-11.userapi.com/tVJ4CfSprLHLlFHDdQkDaDH_PtJks7HJH1PW-A/CHvd5y4-QsA.jpg?ava=1</hasPhoto>
   <hasDomain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">al.usanin</hasDomain>
   <hasBirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1.1998</hasBirthDay>
 </Person>
@@ -640,86 +390,25 @@
   <hasBirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unknown</hasBirthDay>
 </Person>
 
-<Person rdf:about="#80817183">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasActivity rdf:resource="#Интернет-СМИ"/>
-  <hasActivity rdf:resource="#Университетский спорт"/>
-  <friendsWith rdf:resource="#85185902"/>
-  <friendsWith rdf:resource="#102156006"/>
-  <friendsWith rdf:resource="#125749375"/>
-  <friendsWith rdf:resource="#132549939"/>
-  <friendsWith rdf:resource="#361950485"/>
-  <friendsWith rdf:resource="#222492086"/>
-  <subscribedTo rdf:resource="#30210603"/>
-  <subscribedTo rdf:resource="#46038605"/>
-  <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Дарья</hasFirstName>
-  <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Авраменко</hasLastName>
-  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasGender>
-  <hasPhoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://sun9-40.userapi.com/c850224/v850224071/17cddd/vVdzC7m_jYE.jpg?ava=1</hasPhoto>
-  <hasDomain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dashenkaavramenko</hasDomain>
-  <hasBirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29.10</hasBirthDay>
-</Person>
-
-<Person rdf:about="#85185902">
+<Community rdf:about="#3551694">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasActivity rdf:resource="#Городское сообщество"/>
-  <hasActivity rdf:resource="#Образование"/>
-  <friendsWith rdf:resource="#132549939"/>
-  <friendsWith rdf:resource="#199012007"/>
-  <friendsWith rdf:resource="#361950485"/>
-  <friendsWith rdf:resource="#32859585"/>
-  <friendsWith rdf:resource="#80817183"/>
-  <friendsWith rdf:resource="#102156006"/>
-  <subscribedTo rdf:resource="#60397113"/>
-  <subscribedTo rdf:resource="#110581128"/>
-  <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Коля</hasFirstName>
-  <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Никитас</hasLastName>
-  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasGender>
-  <hasPhoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://sun9-29.userapi.com/tCSMqr2dKLlZ1rP0Gb27RG7-JnGRtiekDtXhRw/pkEzE5T_PlA.jpg?ava=1</hasPhoto>
-  <hasDomain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kolya599</hasDomain>
-  <hasBirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unknown</hasBirthDay>
-</Person>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">МОЙ ГОРОД — ПЕРМЬ!</hasName>
+</Community>
 
-<Person rdf:about="#93900513">
+<Community rdf:about="#7557592">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasActivity rdf:resource="#Образование"/>
-  <friendsWith rdf:resource="#32859585"/>
-  <friendsWith rdf:resource="#44239068"/>
-  <friendsWith rdf:resource="#45388386"/>
-  <friendsWith rdf:resource="#102156006"/>
-  <friendsWith rdf:resource="#199012007"/>
-  <friendsWith rdf:resource="#361950485"/>
-  <subscribedTo rdf:resource="#59218056"/>
-  <subscribedTo rdf:resource="#110581128"/>
-  <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Марк</hasFirstName>
-  <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Шефер</hasLastName>
-  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasGender>
-  <hasPhoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://sun9-63.userapi.com/c858332/v858332353/1d950f/VeC3HMoQOGg.jpg?ava=1</hasPhoto>
-  <hasDomain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">harmnope</hasDomain>
-  <hasBirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#string">31.12</hasBirthDay>
-</Person>
+  <hasActivity rdf:resource="#Открытая группа"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Профсоюзная организация студентов ПГУ (ПГНИУ)</hasName>
+</Community>
 
-<Person rdf:about="#125749375">
+<Activity rdf:about="#Городское сообщество">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasActivity rdf:resource="#Городское сообщество"/>
-  <hasActivity rdf:resource="#Интернет-СМИ"/>
-  <hasActivity rdf:resource="#Образование"/>
-  <friendsWith rdf:resource="#132549939"/>
-  <friendsWith rdf:resource="#361950485"/>
-  <friendsWith rdf:resource="#80817183"/>
-  <friendsWith rdf:resource="#82156740"/>
-  <friendsWith rdf:resource="#102156006"/>
-  <subscribedTo rdf:resource="#60397113"/>
-  <subscribedTo rdf:resource="#30210603"/>
-  <subscribedTo rdf:resource="#59218056"/>
-  <subscribedTo rdf:resource="#151288610"/>
-  <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Андрей</hasFirstName>
-  <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Минин</hasLastName>
-  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasGender>
-  <hasPhoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://sun9-69.userapi.com/c855032/v855032244/8598c/tFBpZy5F2Fw.jpg?ava=1</hasPhoto>
-  <hasDomain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dev_geek</hasDomain>
-  <hasBirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.1.1998</hasBirthDay>
-</Person>
+</Activity>
+
+<Activity rdf:about="#Открытая группа">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Activity>
 
 <Person rdf:about="#199012007">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -739,43 +428,6 @@
   <hasPhoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://vk.com/images/camera_100.png?ava=1</hasPhoto>
   <hasDomain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mirtrix</hasDomain>
   <hasBirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16.7</hasBirthDay>
-</Person>
-
-<Person rdf:about="#222492086">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <friendsWith rdf:resource="#80817183"/>
-  <friendsWith rdf:resource="#102156006"/>
-  <friendsWith rdf:resource="#132549939"/>
-  <friendsWith rdf:resource="#361950485"/>
-  <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Антон</hasFirstName>
-  <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Бронштейн</hasLastName>
-  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasGender>
-  <hasPhoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://sun9-65.userapi.com/c850532/v850532724/b2d0b/GrT-OpStk1M.jpg?ava=1</hasPhoto>
-  <hasDomain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">id222492086</hasDomain>
-  <hasBirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11.9</hasBirthDay>
-</Person>
-
-<Person rdf:about="#54845968">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasActivity rdf:resource="#Образование"/>
-  <hasActivity rdf:resource="#Городское сообщество"/>
-  <hasActivity rdf:resource="#Университетский спорт"/>
-  <friendsWith rdf:resource="#102156006"/>
-  <friendsWith rdf:resource="#132549939"/>
-  <friendsWith rdf:resource="#199012007"/>
-  <friendsWith rdf:resource="#235995129"/>
-  <friendsWith rdf:resource="#32859585"/>
-  <friendsWith rdf:resource="#45388386"/>
-  <subscribedTo rdf:resource="#59218056"/>
-  <subscribedTo rdf:resource="#151288610"/>
-  <subscribedTo rdf:resource="#46038605"/>
-  <subscribedTo rdf:resource="#110581128"/>
-  <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Гоша</hasFirstName>
-  <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Шипицын</hasLastName>
-  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasGender>
-  <hasPhoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://sun9-27.userapi.com/YIHedswbz2n9ICHyRYFkuWT0WMGBcFB-VCoE7A/pdJ7CWfZLhc.jpg?ava=1</hasPhoto>
-  <hasDomain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gogirman</hasDomain>
-  <hasBirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12.8</hasBirthDay>
 </Person>
 
 <Person rdf:about="#32859585">
@@ -800,6 +452,342 @@
   <hasDomain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alextsaplin</hasDomain>
   <hasBirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19.6.1998</hasBirthDay>
 </Person>
+
+<Person rdf:about="#93900513">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasActivity rdf:resource="#Образование"/>
+  <friendsWith rdf:resource="#32859585"/>
+  <friendsWith rdf:resource="#44239068"/>
+  <friendsWith rdf:resource="#45388386"/>
+  <friendsWith rdf:resource="#102156006"/>
+  <friendsWith rdf:resource="#199012007"/>
+  <friendsWith rdf:resource="#361950485"/>
+  <subscribedTo rdf:resource="#59218056"/>
+  <subscribedTo rdf:resource="#110581128"/>
+  <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Марк</hasFirstName>
+  <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Шефер</hasLastName>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasGender>
+  <hasPhoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://sun9-63.userapi.com/c858332/v858332353/1d950f/VeC3HMoQOGg.jpg?ava=1</hasPhoto>
+  <hasDomain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">harmnope</hasDomain>
+  <hasBirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#string">31.12</hasBirthDay>
+</Person>
+
+<Activity rdf:about="#Интернет-СМИ">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Activity>
+
+<Activity rdf:about="#Университет">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Activity>
+
+<Activity rdf:about="#Образование">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Activity>
+
+<Activity rdf:about="#Университетский спорт">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Activity>
+
+<Person rdf:about="#54845968">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasActivity rdf:resource="#Образование"/>
+  <hasActivity rdf:resource="#Городское сообщество"/>
+  <hasActivity rdf:resource="#Университетский спорт"/>
+  <friendsWith rdf:resource="#102156006"/>
+  <friendsWith rdf:resource="#132549939"/>
+  <friendsWith rdf:resource="#199012007"/>
+  <friendsWith rdf:resource="#235995129"/>
+  <friendsWith rdf:resource="#32859585"/>
+  <friendsWith rdf:resource="#45388386"/>
+  <subscribedTo rdf:resource="#59218056"/>
+  <subscribedTo rdf:resource="#151288610"/>
+  <subscribedTo rdf:resource="#46038605"/>
+  <subscribedTo rdf:resource="#110581128"/>
+  <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Гоша</hasFirstName>
+  <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Шипицын</hasLastName>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasGender>
+  <hasPhoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://sun9-27.userapi.com/YIHedswbz2n9ICHyRYFkuWT0WMGBcFB-VCoE7A/pdJ7CWfZLhc.jpg?ava=1</hasPhoto>
+  <hasDomain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gogirman</hasDomain>
+  <hasBirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12.8</hasBirthDay>
+</Person>
+
+<Community rdf:about="#60397113">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasActivity rdf:resource="#Городское сообщество"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ПОДСЛУШАНО ПЕРМЬ</hasName>
+</Community>
+
+<Community rdf:about="#151288610">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasActivity rdf:resource="#Городское сообщество"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Пермь 24/7</hasName>
+</Community>
+
+<Community rdf:about="#30210603">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasActivity rdf:resource="#Интернет-СМИ"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ПЕРМЬ АКТИВНАЯ | Perm Active</hasName>
+</Community>
+
+<Community rdf:about="#40202469">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasActivity rdf:resource="#Университет"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Пермский государственный университет (ПГНИУ)</hasName>
+</Community>
+
+<Community rdf:about="#59218056">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasActivity rdf:resource="#Образование"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Подслушано ПГНИУ</hasName>
+</Community>
+
+<Community rdf:about="#110581128">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasActivity rdf:resource="#Образование"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Цитаты преподавателей ПГНИУ</hasName>
+</Community>
+
+<Community rdf:about="#46038605">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasActivity rdf:resource="#Университетский спорт"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Спортивный клуб «Универ» ПГНИУ</hasName>
+</Community>
+
+<Person rdf:about="#125749375">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasActivity rdf:resource="#Городское сообщество"/>
+  <hasActivity rdf:resource="#Интернет-СМИ"/>
+  <hasActivity rdf:resource="#Образование"/>
+  <friendsWith rdf:resource="#132549939"/>
+  <friendsWith rdf:resource="#361950485"/>
+  <friendsWith rdf:resource="#80817183"/>
+  <friendsWith rdf:resource="#82156740"/>
+  <friendsWith rdf:resource="#102156006"/>
+  <subscribedTo rdf:resource="#60397113"/>
+  <subscribedTo rdf:resource="#30210603"/>
+  <subscribedTo rdf:resource="#59218056"/>
+  <subscribedTo rdf:resource="#151288610"/>
+  <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Андрей</hasFirstName>
+  <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Минин</hasLastName>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasGender>
+  <hasPhoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://sun9-69.userapi.com/c855032/v855032244/8598c/tFBpZy5F2Fw.jpg?ava=1</hasPhoto>
+  <hasDomain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dev_geek</hasDomain>
+  <hasBirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.1.1998</hasBirthDay>
+</Person>
+
+<Person rdf:about="#85185902">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasActivity rdf:resource="#Городское сообщество"/>
+  <hasActivity rdf:resource="#Образование"/>
+  <friendsWith rdf:resource="#132549939"/>
+  <friendsWith rdf:resource="#199012007"/>
+  <friendsWith rdf:resource="#361950485"/>
+  <friendsWith rdf:resource="#32859585"/>
+  <friendsWith rdf:resource="#80817183"/>
+  <friendsWith rdf:resource="#102156006"/>
+  <subscribedTo rdf:resource="#60397113"/>
+  <subscribedTo rdf:resource="#110581128"/>
+  <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Коля</hasFirstName>
+  <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Никитас</hasLastName>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasGender>
+  <hasPhoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://sun9-29.userapi.com/tCSMqr2dKLlZ1rP0Gb27RG7-JnGRtiekDtXhRw/pkEzE5T_PlA.jpg?ava=1</hasPhoto>
+  <hasDomain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kolya599</hasDomain>
+  <hasBirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unknown</hasBirthDay>
+</Person>
+
+<Person rdf:about="#80817183">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasActivity rdf:resource="#Интернет-СМИ"/>
+  <hasActivity rdf:resource="#Университетский спорт"/>
+  <friendsWith rdf:resource="#85185902"/>
+  <friendsWith rdf:resource="#102156006"/>
+  <friendsWith rdf:resource="#125749375"/>
+  <friendsWith rdf:resource="#132549939"/>
+  <friendsWith rdf:resource="#361950485"/>
+  <friendsWith rdf:resource="#222492086"/>
+  <subscribedTo rdf:resource="#30210603"/>
+  <subscribedTo rdf:resource="#46038605"/>
+  <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Дарья</hasFirstName>
+  <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Авраменко</hasLastName>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasGender>
+  <hasPhoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://sun9-40.userapi.com/c850224/v850224071/17cddd/vVdzC7m_jYE.jpg?ava=1</hasPhoto>
+  <hasDomain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dashenkaavramenko</hasDomain>
+  <hasBirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29.10</hasBirthDay>
+</Person>
+
+<Person rdf:about="#222492086">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <friendsWith rdf:resource="#80817183"/>
+  <friendsWith rdf:resource="#102156006"/>
+  <friendsWith rdf:resource="#132549939"/>
+  <friendsWith rdf:resource="#361950485"/>
+  <hasFirstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Антон</hasFirstName>
+  <hasLastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Бронштейн</hasLastName>
+  <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasGender>
+  <hasPhoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://sun9-65.userapi.com/c850532/v850532724/b2d0b/GrT-OpStk1M.jpg?ava=1</hasPhoto>
+  <hasDomain rdf:datatype="http://www.w3.org/2001/XMLSchema#string">id222492086</hasDomain>
+  <hasBirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11.9</hasBirthDay>
+</Person>
+
+<Post rdf:about="#-186468555_2152">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#186468555"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-186468555_2143">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#186468555"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-3551694_3038049">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <viewedBy rdf:resource="#235995129"/>
+  <viewedBy rdf:resource="#45388386"/>
+  <postedBy rdf:resource="#3551694"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-3551694_3037932">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <viewedBy rdf:resource="#235995129"/>
+  <viewedBy rdf:resource="#45388386"/>
+  <postedBy rdf:resource="#3551694"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-3551694_3037806">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <viewedBy rdf:resource="#235995129"/>
+  <viewedBy rdf:resource="#45388386"/>
+  <postedBy rdf:resource="#3551694"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-59218056_192245">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <viewedBy rdf:resource="#235995129"/>
+  <viewedBy rdf:resource="#45388386"/>
+  <viewedBy rdf:resource="#54845968"/>
+  <viewedBy rdf:resource="#93900513"/>
+  <postedBy rdf:resource="#59218056"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-59218056_192240">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <viewedBy rdf:resource="#235995129"/>
+  <viewedBy rdf:resource="#45388386"/>
+  <viewedBy rdf:resource="#54845968"/>
+  <viewedBy rdf:resource="#93900513"/>
+  <postedBy rdf:resource="#59218056"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-59218056_192236">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <viewedBy rdf:resource="#235995129"/>
+  <viewedBy rdf:resource="#45388386"/>
+  <viewedBy rdf:resource="#54845968"/>
+  <viewedBy rdf:resource="#93900513"/>
+  <postedBy rdf:resource="#59218056"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-60397113_8352453">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <viewedBy rdf:resource="#45388386"/>
+  <viewedBy rdf:resource="#85185902"/>
+  <postedBy rdf:resource="#60397113"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-60397113_8352445">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <viewedBy rdf:resource="#45388386"/>
+  <viewedBy rdf:resource="#85185902"/>
+  <postedBy rdf:resource="#60397113"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-60397113_8352311">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#60397113"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-151288610_327350">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <viewedBy rdf:resource="#45388386"/>
+  <viewedBy rdf:resource="#54845968"/>
+  <postedBy rdf:resource="#151288610"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-151288610_327317">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <viewedBy rdf:resource="#45388386"/>
+  <viewedBy rdf:resource="#54845968"/>
+  <postedBy rdf:resource="#151288610"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-40202469_23660">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <viewedBy rdf:resource="#45388386"/>
+  <postedBy rdf:resource="#40202469"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-40202469_23656">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#40202469"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-30210603_2295664">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <viewedBy rdf:resource="#45388386"/>
+  <postedBy rdf:resource="#30210603"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-30210603_2295639">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <viewedBy rdf:resource="#45388386"/>
+  <postedBy rdf:resource="#30210603"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-30210603_2295623">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <viewedBy rdf:resource="#45388386"/>
+  <postedBy rdf:resource="#30210603"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-46038605_4479">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#46038605"/>
+  <isRepostOf rdf:resource="#-18354526_457246038"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-18354526_457246038">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Post>
+
+<Post rdf:about="#-46038605_4478">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#46038605"/>
+  <isRepostOf rdf:resource="#-42735432_74502"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-42735432_74502">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Post>
 
 <Post rdf:about="#-60397113_8352569">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -832,6 +820,114 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <viewedBy rdf:resource="#45388386"/>
   <viewedBy rdf:resource="#282875460"/>
+  <postedBy rdf:resource="#30210603"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-186468555_2157">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#186468555"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-3551694_3039833">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#3551694"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-3551694_3039787">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#3551694"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-3551694_3039661">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#3551694"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-59218056_192282">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#59218056"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-59218056_192270">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#59218056"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-59218056_192269">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#59218056"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-60397113_8355212">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#60397113"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-60397113_8355186">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#60397113"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-60397113_8355170">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#60397113"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-151288610_327691">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#151288610"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-151288610_327656">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#151288610"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-110581128_4263">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#110581128"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-40202469_23674">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#40202469"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-40202469_23669">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#40202469"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-30210603_2296288">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#30210603"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-30210603_2296261">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <postedBy rdf:resource="#30210603"/>
+  <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
+</Post>
+
+<Post rdf:about="#-30210603_2296235">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <postedBy rdf:resource="#30210603"/>
   <isAds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isAds>
 </Post>

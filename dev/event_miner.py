@@ -1,12 +1,8 @@
 #!/usr/local/bin/python3
 
-import threading
 import time
 import xes
 import threading
-from datetime import datetime, timezone
-import copy
-import os
 
 # https://oauth.vk.com/authorize?client_id=7230301&redirect_uri=https://localhost&response_type=code&scope=friends groups offline
 # https://oauth.vk.com/access_token?client_id=7230301&client_secret=EfoAqkm3YcsIaRlRd7cq&code=683467eade23dd4136&redirect_uri=https://localhost

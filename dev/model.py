@@ -238,6 +238,8 @@ class VK:
             if p_id == last_post_id:
                 break
 
+            tags = {post["text"].strip("#") for tag in post["text"].split() if tag.startswith("#")}
+
             new_post = Post(p_id, owner_id, post["date"], post["post_type"], post["marked_as_ads"])
 
             if "copy_history" in post and len(post["copy_history"]) > 0:
@@ -335,7 +337,6 @@ class EventLog:
             xes.Classifier(name="concept:name", keys="concept:name")
         ]
         self.log_path = log_path
-        self.log_cnt = 0
 
     def add_trace(self, trace):
         if len(trace.events) == 0:
@@ -354,7 +355,7 @@ class EventLog:
         self.log_lock.acquire()
         try:
             copy_log = copy.deepcopy(self.log)
-            with open(self.log_path + "/log_%s.xes" % self.log_cnt, "w") as file_to_write:
+            with open(self.log_path + "/log_%s.xes" % datetime.isoformat(), "w") as file_to_write:
                 file_to_write.write(str(copy_log))
                 file_to_write.close()
             self.log = xes.Log()
@@ -362,7 +363,6 @@ class EventLog:
                 xes.Classifier(name="org:resource", keys="org:resource"),
                 xes.Classifier(name="concept:name", keys="concept:name")
             ]
-            self.log_cnt += 1
         finally:
             self.log_lock.release()
 
@@ -466,7 +466,7 @@ class Person:
         self.friends = friends
         self.groups = groups
         self.posts_seen = []
-        self.posts_liked = []
+        self.post_liked = []
 
 
 class Community:

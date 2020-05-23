@@ -2,10 +2,8 @@
 
 from owlready2 import *
 import pika
-import vk_api
-import model
 import json
-import event_miner
+from dev import event_miner, model
 import os
 
 # https://oauth.vk.com/authorize?client_id=7230301&redirect_uri=https://localhost&response_type=code&scope=groups friends

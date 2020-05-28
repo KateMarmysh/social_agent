@@ -246,7 +246,7 @@ class VK:
             if p_id == last_post_id:
                 break
 
-            tags = {post["text"].strip("#") for tag in post["text"].split() if tag.startswith("#")}
+            tags = [tag.strip("#") for tag in post["text"].split() if tag.startswith("#")]
 
             is_ads = 0
             if "marked_as_ads" in post and post["marked_as_ads"] == 1:

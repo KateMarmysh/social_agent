@@ -1,0 +1,20 @@
+@startuml
+
+actor User
+actor Agent
+actor HttpServer
+
+User -up-> (Start data collection)
+User -right-> (Add person or community to focus group)
+User -down-> (Stop data collection)
+
+(Start data collection) -down-> Agent
+(Add person or community to focus group) -right-> Agent
+(Stop data collection) -up-> Agent
+
+User -down-> (Get ontology)
+User -up-> (Get log)
+(Get ontology) -up-> HttpServer
+(Get log) -down-> HttpServer
+
+@enduml

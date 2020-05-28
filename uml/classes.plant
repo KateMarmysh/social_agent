@@ -1,0 +1,135 @@
+@startuml
+
+class Ontology {
+  path: string
+  onto: Onto
+  onto_lock: Lock
+  +create_ontology()
+  +save_person(person)
+  +save_community(community)
+  +save_post(post)
+  +post_viewed(user_id, post)
+  +post_liked(user_id, post)
+}
+
+class VK {
+  api: VkApi
+  target_users: []string
+  target_groups: []string
+  +get_person(user_id)
+  +get_person_friends(user_id)
+  +get_community(group_id)
+  +get_posts(owner_id, count, last_post_id)
+  +get_liked_posts(person)
+  +is_user_online(person)
+}
+
+class NewsFeed{
+  global_news_feed: []Post
+  news_feed_lock: Lock
+  +is_empty(owner_id)
+  +get_last_post_id(owner_id)
+  +add_posts(owner_id, posts)
+  +get_user_news(posts)
+}
+
+class EventLog{
+  log: Log
+  log_lock: Lock
+  log_path: string
+  +add_trace(trace)
+  +write_log()
+  {static}+event_online(resource_id)
+  {static}+event_offline(resource_id)
+  {static}+event_post_add(resource_id, post)
+  {static}+event_post_seen(resource_id, post)
+  {static}+event_post_liked(resource_id, post)
+  {static}+event_post_copied(resource_id, post)
+}
+
+class Person{
+  friends: []string
+  groups: []string
+  interests: []string
+  u_id: string
+  first_name: string
+  last_name: string
+  gender: string
+  birth_day: Date
+  photo: string
+  domain: string
+  posts_seen: []Post
+  posts_liked: []Post
+}
+
+class Community{
+  g_id: string
+  name: string
+  activity: string
+}
+
+class Post{
+  id: string
+  owner_id: string
+  date: Date
+  type: string
+  is_ads: string
+  tags: []string
+  copy_history: []string
+  +add_history(post_id)
+  +is_reposted()
+}
+
+class GroupEventMiner{
+  community: Community
+  vk: VK
+  news_feed: NewsFeed
+  ontology: Ontology
+  event_log: EventLog
+  owner_id: string
+  trace: Trace
+  +run()
+  -load_news_feed()
+}
+
+GroupEventMiner *-left- Community
+GroupEventMiner o-down- Ontology
+GroupEventMiner o-down- VK
+GroupEventMiner o-down- EventLog
+GroupEventMiner o-down- NewsFeed
+
+class UserEventMiner{
+  vk: VK
+  news_feed: NewsFeed
+  event_log: EventLog
+  ontology: Ontology
+  person: Person
+  owner_id: string
+  user_online: bool
+  trace: Trace
+  +run()
+  -load_news_feed()
+}
+
+abstract class Thread {
+  {abstract} +run()
+}
+
+together {
+  class UserEventMiner
+  class GroupEventMiner
+}
+
+Thread <|-down- UserEventMiner
+Thread <|-down- GroupEventMiner
+
+GroupEventMiner o-right- Post
+UserEventMiner o-left- Post
+
+UserEventMiner *-right- Person
+UserEventMiner o- Ontology
+UserEventMiner o-down- VK
+UserEventMiner o-down- EventLog
+UserEventMiner o-down- NewsFeed
+
+@enduml

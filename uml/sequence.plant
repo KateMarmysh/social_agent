@@ -1,0 +1,41 @@
+@startuml
+
+participant User as User
+participant Cleint as Client
+participant Agent as Agent
+participant HttpServer as HttpServer
+participant VK as VK
+participant Storage as Storage
+
+User -> Agent: start with run.sh
+
+activate HttpServer
+activate Agent
+Agent --> User: OK
+loop saving data
+Agent -> VK: get data
+VK --> Agent: return data
+Agent -> Storage: save log.xes, social-model.owl
+Storage --> Agent: OK
+end
+
+loop getting data
+alt getting log
+Client -> HttpServer: get log.xes
+HttpServer -> Storage: get log.xes
+Storage --> HttpServer: return log.xes
+HttpServer --> Client: return log.xes
+else getting ontology
+Client -> HttpServer: get social-model.owl
+HttpServer -> Storage: get social-model.owl
+Storage --> HttpServer: return social-model.owl
+HttpServer --> Client: return social-model.owl
+end
+end
+
+User -> Agent: stop with stop.sh
+Agent --> User: OK
+deactivate Agent
+deactivate HttpServer
+
+@enduml

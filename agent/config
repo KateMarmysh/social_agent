@@ -1,4 +1,4 @@
-VK_API_TOKEN=<your_social_token>
+VK_API_TOKEN=
 RABBIT_MQ_HOST=localhost
 SA_POSTS_COUNT=3
 SA_TIME_TICK=15

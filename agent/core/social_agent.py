@@ -4,6 +4,7 @@ import xes
 import copy
 import json
 import pika
+import networkx as nx
 from datetime import datetime, timezone
 
 
@@ -627,11 +628,29 @@ class UserEventMiner(threading.Thread):
         self.news_feed.add_posts(self.owner_id, posts)
 
 
+class NetworkAnalyzer:
+    G = nx.Graph()
+
+    def add_node(self, person):
+        self.G.add_node(person.u_id)
+        for friend in person.friends:
+            self.G.add_node(friend)
+            self.G.add_edge(person.u_id, friend)
+
+    def print_network_characteristics(self):
+        time.sleep(time_to_analyze_network)
+        print("degree_centrality: ", nx.degree_centrality(self.G))
+        print("eigenvector_centrality: ", nx.eigenvector_centrality(self.G))
+        print("closeness_centrality: ", nx.closeness_centrality(self.G))
+        print("pagerank: ", nx.pagerank(self.G))
+
+
 target_users = []
 target_groups = []
 
 posts_count = int(os.getenv("SA_POSTS_COUNT"))
 time_tick = int(os.getenv("SA_TIME_TICK"))
+time_to_analyze_network = int(os.getenv("SA_TIME_TO_ANALYZE_NETWORK"))
 time_to_see_post = int(os.getenv("SA_TIME_TO_SEE_POST"))
 time_to_check_likes = int(os.getenv("SA_TIME_TO_CHECK_LIKES"))
 time_to_check_online = int(os.getenv("SA_TIME_TO_CHECK_ONLINE"))
@@ -645,6 +664,7 @@ ontology.create_ontology()
 vk = VK(os.getenv("VK_API_TOKEN"), target_users, target_groups)
 event_log = EventLog("./web/logs")
 news_feed = NewsFeed()
+network_analyzer = NetworkAnalyzer()
 
 # Rabbit connection declare
 connection = pika.BlockingConnection(pika.ConnectionParameters(host=os.getenv("RABBIT_MQ_HOST")))
@@ -685,6 +705,7 @@ def callback(ch, method, properties, body):
         # Check new user
         if person.u_id not in target_users:
             vk.target_users.append(person.u_id)
+            network_analyzer.add_node(person)
 
             # Start mining events
             UserEventMiner(vk, news_feed, ontology, event_log, person).start()
@@ -723,4 +744,8 @@ print(" [*] Ontology consumer started\n")
 
 log_writer_thread = threading.Thread(target=event_log.write_log)
 log_writer_thread.start()
+
+analyzer_writer_thread = threading.Thread(
+    target=network_analyzer.print_network_characteristics())
+analyzer_writer_thread.start()
 print(" [*] To exit press CTRL+C")

@@ -12,7 +12,7 @@ Ontology in owl format.
 ## Installation
 1.  You need to copy and install the archive on the server on which the agent will be running
     ```sh
-    wget https://raw.githubusercontent.com/KateMarmysh/social_agent/new_version_2024/agent.tar.gz
+    wget https://raw.githubusercontent.com/KateMarmysh/social_agent/new_version_2024/social_agent_vk_onto.zip
     tar -xzf agent.tar.gz
     ```
 2.  Install python libs (python 3.10 required)
